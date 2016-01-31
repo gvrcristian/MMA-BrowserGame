@@ -1,0 +1,392 @@
+	img { vertical-align:middle; }
+	#menus-container {
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:2000;
+		}
+
+/* contex table menu*/
+	.cmenu {
+		/*display:none;*/
+		visibility:hidden;
+		position:absolute;
+		left:0;
+		top:0;
+		margin:0;
+		padding:0;
+		background-color:#cdcdcd;
+		border:1px solid #333;
+		z-index:12000;
+		}
+	.cmenu tr {min-width:200px;}
+	.cmenu th,
+	.cmenu td {
+		padding:4px 5px 4px 5px;
+		color:white;
+		font:normal 7.5pt Verdana,'Trebuchet MS',Arial, Tahoma,'MS Sans Serif',sans-serif;
+		text-align:left;
+		white-space:nowrap;
+		cursor:default;
+		background-repeat:no-repeat;
+		}
+	.cmenu th {
+		padding:0;
+		font-weight:bold;
+		}
+	.cmenu th.title {
+		margin:0;
+		padding:5px;
+		color:#f2f2f2;
+		font:bold 9pt Arial,Verdana,'Trebuchet MS',Tahoma,'MS Sans Serif',sans-serif;
+		letter-spacing:1px;
+		white-space:nowrap;
+		background-color:#1a68ab;
+		cursor:default;
+		width:250px;
+		}
+
+	.cmenu th.title small{
+		color:#999 !important;
+		font:normal 7pt Verdana !important;
+		letter-spacing:0px !important;
+		font-style:italic !important;
+		}
+
+
+	.cmenu th a:link,
+	.cmenu th a:visited {
+		display:block;
+		width:80%;
+		padding:4px 20px 4px 5px;
+		color:white;
+		text-decoration:none;
+		}
+	.cmenu th a:hover {}
+
+	.cmenu th.title a:link,
+	.cmenu th.title a:visited 
+	{
+		padding:inherit;
+		color:inherit;
+	}
+
+	td.st,td.at,td.rs,td.ch,td.rsp,td.gr,td.tox {
+		background-position:0 50%;
+		background-repeat:no-repeat;
+		font-size: 7.5pt !important;
+		font-family:Tahoma,Verdana;
+		padding-left:16px;
+/*		letter-spacing:-1px;*/
+		color:white;
+		}
+	td.tip,th.dstr,th.upg {
+		padding-left:16px;
+		background-position:2% 50%;
+		background-repeat:no-repeat;
+		color:white;
+		}
+
+	.obj_flag {
+		overflow:hidden;
+
+		position:absolute;
+		width:40px;
+		height:64px;
+		left:77px; 
+		bottom:78px;
+		display:block;	
+		overflow:hidden;
+		background-image: url(obj_flags.gif);
+		background-repeat:no-repeat;
+
+		z-index:2001;
+	}
+	.obj_my		{ background-position: 0px		0px; }
+	.obj_gang	{ background-position: -40px	0px; }
+	.obj_friends{ background-position: -80px	0px; }
+	.obj_none	{ background-position: -220px	0px; }
+	.obj_city	{ background-position: -120px	0px; }
+	.obj_other	{ background-position: -160px	0px; }
+	.obj_enemy	{ background-position: -200px	0px; }
+
+/* minimap table variant*/
+	.minimap td.mmmy,
+	.minimap td.mmg,
+	.minimap td.mmf,
+	.minimap td.mmn,
+	.minimap td.mmc,
+	.minimap td.mme,
+	.minimap td.mmo
+	{
+		width:6px;
+		height:6px;
+		font-size:6px !important;
+		overflow:hidden;
+		/*cursor:arrow !important;*/
+	}
+
+	.minimap td,
+	.minimap td table td,
+	.minimap td table {
+		padding: 0;
+		margin: 0;
+	}
+	.minimap td table td{
+		margin: 0;
+	}
+	.minimap td div {
+		display: block; 
+		height:15px;
+		width:15px;
+		position:relative;
+	}
+
+	table.block {
+		width: 9px;
+	}
+	.inline { display:inline;}
+	.abs {
+		display:block;
+		position:absolute;
+	}
+	.mid {
+		position:relative;
+		vertical-align:middle;
+	}
+	.no-img {
+		background: none;
+		background-image: none;
+	}
+
+/*
+	Map Object Styles
+	--------------------------------------------------
+*/
+	.map_head {
+		position:absolute;
+		top:0;
+		left:0;
+		font-size:8pt;
+		padding:1px 2px;
+		background-color:#111;
+		height:64px;
+		z-index:2000;
+		/*
+		opacity:.9;
+		filter:alpha(opacity=90);
+		*/
+		}
+
+	.map_head img.avt {
+		float:left;
+		margin:1px 4px 1px 0;
+		padding:1px;
+		vertical-align:middle;
+		border:1px solid #666;
+		background-color:#333;
+		}
+	.private-map,
+	.private-map-10{
+		position:relative;
+		margin:0;
+		padding:0;
+		width:575px;
+		height:374px;
+		background:transparent url('map.gif') 0 -2px no-repeat;
+
+		border:1px solid #666;
+		z-index:1
+		}
+
+
+
+/*
+	Building locations
+	--------------------------------------------------
+*/
+
+	.spot0  { left:387px;	bottom:223px;	z-index:10; eborder: 1px solid red;}
+	.spot1  { left:-12px;	bottom:225px;	z-index:20; eborder: 1px solid red;}
+	.offline    spot2  { left:462px;	bottom:182px;	z-index:30; eborder: 1px solid red;}
+	.spot3  { left:301px;	bottom:82px;	z-index:40; eborder: 1px solid red;}
+	.offline    spot4  { left:172px;	bottom:94px;	z-index:50; eborder: 1px solid red;}
+	.spot5  { left:102px;	bottom:-50px;	z-index:60; eborder: 1px solid red;}
+	.spot6  { left:-8px;	bottom:4px;		z-index:70; eborder: 1px solid red;}
+	.offline spot7  { left:490px;	bottom:-3px;		z-index:80; eborder: 1px solid red;}
+	.spot8  { left:381px;	bottom:46px;	z-index:90; eborder: 1px solid red;}
+
+
+/* Building names */
+
+	div.bakery,		div.bakery_over,
+	div.watchmaker, div.watchmaker_over,
+	div.butchery,	div.butchery_over,
+	div.hairstyle,	div.hairstyle_over,
+	div.pizza,		div.pizza_over,
+	div.groceries,	div.groceries_over,
+	div.newsshop,	div.newsshop_over,
+	div.keymaker,	div.keymaker_over,
+	div.clothing,	div.clothing_over,
+	
+	div.gold-craft,	div.gold-craft_over,
+	div.restourant,	div.restourant_over,
+	div.sweet-shop,	div.sweet-shop_over,
+	div.locksmith,	div.locksmith_over	
+	{
+		overflow:hidden;
+		display:block;
+		position:absolute;
+		width:166px;
+		height:172px;
+		background-position:-16px -7px;
+		background-color:transparent;
+		background-repeat:no-repeat;
+		/*border:red solid 1px;*/
+	}
+
+
+	div.newsshop,
+	div.newsshop_over {
+		background-image:url('107.gif');
+		}
+	div.groceries,
+	div.groceries_over {
+		background-image:url('102.gif');
+		}
+	div.bakery,
+	div.bakery_over {
+		background-image:url('100.gif');
+		}
+	div.butchery,
+	div.butchery_over {
+		background-image:url('103.gif');
+		}
+	div.watchmaker,
+	div.watchmaker_over {
+		background-image:url('105.gif');
+		}
+	div.keymaker,
+	div.keymaker_over {
+		background-image:url('101.gif');
+		}
+	div.hairstyle,
+	div.hairstyle_over{
+		background-image:url('109.gif');
+		}
+	div.pizza,
+	div.pizza_over {
+		background-image:url('106.gif');
+	}
+	div.clothing,
+	div.clothing_over {
+		background-image:url('104.gif');
+	}
+
+	div.hairstyle_over,
+	div.watchmaker_over,
+	div.butchery_over,
+	div.pizza_over,    
+	div.groceries_over,
+	div.bakery_over,
+	div.newsshop_over,
+	div.keymaker_over,
+	div.clothing_over 
+		{background-position:-186px -7px;}
+
+
+	.tooltip	div.bakery,
+	.tooltip	div.watchmaker,
+	.tooltip	div.butchery,
+	.tooltip	div.hairstyle,
+	.tooltip	div.pizza,
+	.tooltip	div.groceries,
+	.tooltip	div.newsshop,
+	.tooltip	div.keymaker,
+	.tooltip	div.clothing,
+
+	.tooltip	div.gold-craft,
+	.tooltip	div.restourant,
+	.tooltip	div.sweet-shop,
+	.tooltip	div.locksmith
+	{
+		float:left;
+		width:145px;
+		position:relative;
+		margin:5px 5px 0 5px;
+		/*border:red solid 1px;*/
+	}
+
+	/*
+		People, Cars
+	*/
+
+	.postman, .postman_over,
+	.inlove, .inlove_over,
+	.dude, .dude_over,
+	.oldcar, .oldcar_over,
+	.newcar, .newcar_over,
+	.mycar, .mycar_over,
+	.dog, .dog_over,
+	.drugdealer, .drugdealer_over,
+	.drunk, .drunk_over,
+	.skater, .skater_over
+
+	{
+		display:block;
+		position:absolute;
+		width:80px;
+		height:80px;
+		background:transparent url('objects.gif') 0 0  no-repeat;
+		/*border:1px solid red;*/
+	}
+
+/*  Other locations
+*/
+
+	.dude,
+	.dude_over {left:230px; bottom:70px; width:92px; height:68px; background-position: 0 -140px; z-index:89; }
+	.dude_over {background-position: 0 -220px;}
+
+	.taxi,
+	.taxi_over {left:485px; bottom:305px; width:99px; height:68px; background-position: -640px -148px; z-index:92; }
+	.taxi_over {background-position: -640px -228px;}
+
+	.mycar,
+	.mycar_over {left:20px; bottom:185px; width:105px; height:65px; background-position: -304px -142px; z-index:33; }
+	.mycar_over {background-position: -304px -224px;}
+
+	.newcar,
+	.newcar_over {left:320px; bottom:298px; width:95px; height:68px; background-position: -96px -140px; z-index:91; }
+	.newcar_over {background-position: -96px -220px;}
+
+	.postman,
+	.postman_over {left:150px; bottom:280px; width:28px; height:51px; background-position: -32px -13px; z-index:101; }
+	.postman_over {background-position: -32px -77px;}
+
+	.inlove,
+	.inlove_over {left:62px; bottom:2px; width:19px; height:38px; background-position: -240px -27px; z-index:108; }
+	.inlove_over {background-position: -240px -91px;}
+
+	.dog,
+	.dog_over {left:204px; bottom:180px; width:20px; height:22px; background-position: -192px -363px; z-index:121;}
+	.dog_over {background-position: -192px -427px;}
+
+	.drunk,
+	.drunk_over {left:270px; bottom:325px; width:40px; height:40px; background-position: -592px -24px; z-index:169; }
+	.drunk_over {background-position: -592px -88px;}
+	
+	.skater,
+	.skater_over {left:240px; bottom:325px; width:33px; height:45px; background-position: -112px -19px; z-index:104; }
+	.skater_over {background-position: -112px -83px;}
+
+/* Building tooltip */
+	div.tltp {
+		visibility:hidden;
+		margin:0;
+		padding:2px;
+		font-size:10px;
+		color:#eee;
+		background-color:#333;
+		border:1px #666 solid;
+		}
